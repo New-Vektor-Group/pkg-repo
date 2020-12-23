@@ -1,10 +1,49 @@
 {
-  "RedBeanPHP": "5.6.2",
-  "nvg-pag": "1.0.5",
-  "nvg-pag-nav": "1.0.5",
-  "nvg-oau": "1.1",
-  "nvg-oau-api": "1.1",
-  "nvg-data": "1.0",
-  "nvg-crypt": "1.0",
-  "mail": "6.1.1"
+  "RedBeanPHP": {
+  	"version":"5.6.2",
+  	"package":"rb",
+  	"isfile":true,
+  	"dep":{}
+  },
+  "nvg-pag": {
+  	"version":"1.0.5",
+  	"package":"nvg-pag",
+  	"isfile":true,
+  	"dep":{}
+  },
+  "nvg-pag-nav": {
+  	"version":"1.0.5",
+  	"package":"nvg-pag-nav",
+  	"isfile":true,
+  	"dep":{}
+  },
+  "nvg-oau": {
+  	"version":"1.1",
+  	"package":"nvg-oau",
+  	"isfile":true,
+  	"dep": {
+  		"reg":"nvg-reg.server",
+  		"logout":"nvg-logout.server",
+  		"auth":"nvg-auth.server",
+  		"auth2fa":"1_2fa.server"
+  	}
+  },
+  "nvg-data": {
+  	"version":"1.0",
+  	"package":"nvg-data",
+  	"isfile":true,
+  	"dep":{}
+  },
+  "nvg-crypt": {
+  	"version":"1.0",
+  	"package":"nvg-crypt",
+  	"isfile":true,
+  	"dep":{}
+  },
+  "Mail": {
+  	"version":"6.1.1",
+  	"package":"mail",
+  	"isfile":false,
+  	"dep":{}
+  }
 }
