@@ -342,7 +342,8 @@ class nvgOAu
 							{
 								$ses->time = time();
 								$ses->is_online = true;
-								$ses->ip = $_SERVER['REMOTE_ADDR'];
+                                $ses->ip = $_SERVER['REMOTE_ADDR'];
+                                $ses->user_agent = $_SERVER['HTTP_USER_AGENT'];
 								R::store($ses);
 							}
 
