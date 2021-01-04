@@ -54,7 +54,7 @@ if(isset($_POST['f2ab']) and $_POST['f2ab'] == "1" and isset($_POST['f2abscript'
 	include(trim($_POST['f2abscript']).".php");
 else
 {
-	require_once('../GoogleAuthenticator.php');
+	require_once('../lib/GoogleAuthenticator.php');
 	$ga = new GoogleAuthenticator;
 
 	if(isset($options['subproc']))
