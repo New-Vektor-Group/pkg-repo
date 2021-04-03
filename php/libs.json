@@ -18,7 +18,7 @@
   	"dep":{}
   },
   "nvg-oau": {
-  	"version":"1.2",
+  	"version":"1.2.2",
   	"package":"nvg-oau",
   	"isfile":true,
   	"dep": {

@@ -19,6 +19,7 @@ if($error==0)
 	{
 		if(isset($_COOKIE['nvg_auth_user']))
 		{
+			R::selectDatabase("nvgpass");
 			$ses = R::findOne($data['tab'],"hash = ?",[$_COOKIE['nvg_auth_user']]);
 			if($ses)
 			{

@@ -287,26 +287,10 @@ class nvgOAu
 			';
 
 		echo 'function Exit() {
-			
-			';
-
-		  echo '$.ajax
-			(
-			{
-			  url: "'.$data["path"].'nvg-logout.server.php",
-			  cache: false,
-			  type: "POST",
-			  success: function(data)
-			  { 
-			    '.$data["funcs"][0].'(data);
-			  }, 
-			  error: function(data)
-			  { 
-			    '.$data["funcs"][1].'(data);
-			  }    
-			}
-			);
-		}';
+		        nvgpost("'.$data["path"].'nvg-logout.server.php", new FormData(),function (x){
+		            '.$data["funcs"][0].'();
+		        });
+		    }';
 	}
 
 	static function user($tab = "users", $tab2 = "sessions", $advance = false, $invis = false)
